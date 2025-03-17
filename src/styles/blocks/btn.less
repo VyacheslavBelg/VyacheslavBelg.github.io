@@ -1,47 +1,46 @@
 .btn{
-    display: inline-flex;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 40px;
-    font-size: 16px;
+  display: inline-block;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  overflow: hidden;
+  cursor: pointer;
+  &--pp{
+    width: 401px;
+    height: 52px;
     font-family: @font1;
-    font-weight: 600;
-    line-height: 1.3;
-    background-color: transparent;
-    text-decoration: none;
+    font-size: 16px;
     border: 1px solid @black;
-    border-radius: 0;
-    outline: none;
-    color: @black;
-    transition: background-color 0.2s, color 0.2s;
-
-    &:hover,
-    &:active{
-        background-color: @black;
-        color: @white;
+    padding: 15px 40px;
+    font-weight: 600;  
+  }
+  &--close{
+    border: none;
+    &:hover {
+      text-decoration: underline;
     }
-    &-orange{
-        background-color: @red;
-        border: none;
-        color: @white;
-        transition: background-color 0.2s;
-    }
-    &-orange:hover,
-    &-orange:active{
-        background-color: @red_dark;
-}
-}
-.btns__text{
-    font-family: @font2;
+  }
+  &--footer{
+    width: 135px;
+    height: 49px;
+    font-family: @font1;
+    font-size: 14px;
+    background-color: @black;
+    color: @white;
+    padding: 15px 23px;
     font-weight: 400;
-    font-size: 22px;
-    text-transform: uppercase;
-    color: @black;
-}
-.btns__btn-row{
-    display: flex;
-    flex-direction: row;
-    gap: 106.12px;
-    padding-top: 30px;
+  }
+  &--tickets{
+    width: 405px;
+    height: 52px;
+    font-family: @font1;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: @red;
+    color: @white;
+    padding: 15px 23px;
+    font-weight: 400;
+  }
 }
